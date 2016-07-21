@@ -1,216 +1,36 @@
-﻿<!DOCTYPE html>
-<html lang='en'>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Detalle Factura - Punto de Venta Nº 1</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-  	<!-- jQuery & jQuery UI + theme (required) -->
-  	<link href="css/jquery-ui.min.css" rel="stylesheet">
-  	<!-- keyboard widget css & script (required) -->
-  	<link href="css/keyboard.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
-</head>
-<body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Prueba</title>
+  </head>
+  <body>
+    <div id="#contenedor">
 
-<div class="container-fluid">
-
-    <div class="row">
-      <div class="col-sm-5 col-md-4">
-        <div class="row panel panel-body div-scroll">
-          <div class="">
-              <table id="tabla-productos" class='table table-striped table-bordered table-hover table-condensed'>
-                <thead>
-                  <tr>
-                    <th>Item</th>                    <th>Producto</th>
-                    <th>Precio</th>                    <th>Cant.</th>
-                    <th>Subtotal</th>                    <th>&nbsp;&nbsp;&nbsp;</th>
-                  </tr>
-                </thead>
-                <tbody>
-                </tbody>
-              </table>
-          </div>
-        </div>
-        <div class="row panel panel-body">
-          <table class='table table-striped table-hover table-condensed'>
-            <tbody>
-              <tr>
-                <td class="text-left">Items</td>
-                <td class="text-left"><label id="items">0</label></td>
-                <td class="text-left">IGV</td>
-                <td class="text-left"><label id="igv">02.23</label></td>
-              </tr>
-              <tr>
-                <td></td><td></td>
-                <td class="text-left">Total</td>
-                <td class="text-left"><label id="total">0</label></td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="btn-group">
-            <button type="button" class="btn btn-primary">Guardar</button>
-            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal_pagar">Pagar</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-7 col-md-8">
-        <div class="row panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title"><h4>Mesa N° 1</h4></h3>
-            </div>
-            <div class="panel-body">
-		<select class="">
-			<option> mozo 1</option>
-			<option> mozo 2</option>
-			<option> mozo 3</option>
-			<option> mozo 4</option>
-		</select>
-              <ul class="nav nav-tabs">
-                <li class="active"><a data-toggle="tab" href="#tab-1">Categoria 1</a></li>
-                <li><a data-toggle="tab" href="#tab-2">categoria 2</a></li>
-                <li class="active"><a data-toggle="tab" href="#tab-1">Categoria 1</a></li>
-                <li><a data-toggle="tab" href="#tab-2">categoria 2</a></li>
-                <li class="active"><a data-toggle="tab" href="#tab-1">Categoria 1</a></li>
-                <li><a data-toggle="tab" href="#tab-2">categoria 2</a></li>
-                <li class="active"><a data-toggle="tab" href="#tab-1">Categoria 1</a></li>
-                <li><a data-toggle="tab" href="#tab-2">categoria 2</a></li>
-                <li class="active"><a data-toggle="tab" href="#tab-1">Categoria 1</a></li>
-                <li><a data-toggle="tab" href="#tab-2">categoria 2</a></li>
-                <li class="active"><a data-toggle="tab" href="#tab-1">Categoria 1</a></li>
-                <li><a data-toggle="tab" href="#tab-2">categoria 2</a></li>
-              </ul>
-              <div class="tab-content">
-                <div id="tab-1" class="tab-pane fade in active">
-                  <div class="row panel panel-body">
-                    <button class="btn btn-default btn-lg add-producto">
-                      Producto1
-                    </button>
-                    <button class="btn btn-default btn-lg add-producto">
-                      Producto2
-                  </div>
-                </div>
-                <div id="tab-2" class="tab-pane fade">
-                  <div class="row panel panel-body">
-                    <button class="btn btn-default btn-lg add-producto">
-                      Producto3
-                    </button>
-                    <button class="btn btn-default btn-lg add-producto">
-                      Producto4
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-      </div>
     </div>
-</div>
-
-
-<!-- Modal -->
-<div class="modal fade" id="modal_pagar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      </div>
-      <div class="modal-body">
-      	  <form class="form form-horizontal">
-		<div class="row panel panel-body">
-			<div class="col-sm-5 ">
-          			<div class="form-group">
-           				<label>Campo1</label>
-           				<input type="text" class="form-control" >
-          			</div>
-          			<div class="form-group">
-           				<label>Campo2</label>
-           				<input type="text" class="form-control" >
-          			</div>
-          			<div class="form-group">
-           				<label>Total</label>
-           				<input type="text" class="form-control" >
-          			</div>
-
-			</div>
-			<div class="col-sm-offset-3 col-sm-4 text-center alert alert-danger">
-          			<div class="btn-group btn-group-justified ">
-  					<a class="aut btn btn-default">200</a>
-  					<a class="aut btn btn-default">100</a>
- 					<a class="aut btn btn-default">50</a>
-				</div>
-				<div class="btn-group btn-group-justified">
-  					<a class="aut btn btn-default">20</a>
-  					<a class="aut btn btn-default">10</a>
- 					<a class="aut btn btn-default">5</a>
-				</div>
-				<div class="btn-group btn-group-justified">
-  					<a class="aut btn btn-default">2</a>
-  					<a class="aut btn btn-default">1</a>
- 					<a class="aut btn btn-default">0.50</a>
-				</div>
-				<div class="btn-group btn-group-justified">
-
-				</div>
-
-			</div>
-
-		</div>
-
-		<button type="submit" class="btn btn-primary">Pagar</button>
-         </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-    <script src="js/jquery-latest.min.js"></script>
-  	<script src="js/jquery-ui.min.js"></script>
-  	<script src="js/bootstrap.min.js"></script>
-  	<script src="js/jquery.keyboard.js"></script>
-    <script src="js/aplicacion.js"></script>
-    <!-- initialize keyboard (required) -->
-  	<script>
-  		$(function(){
-  			$('.keyboard').keyboard();
-  		});
-  	</script>
-    <script>
-      $(".add-producto").on('click', function(){
-        var tabla = 'tabla-productos';
-        var elementos;
-        var btn_eliminar = "<button class='close remove-producto'>&times;</button>";
-        var txt_cantidad = "<input type='number' value='1' size='1' class='numero cantidad keyboard'>";
-        var nombre = $(this).text();
-        var precio = 12.5;
-        elementos = [$("#"+tabla+" tr").length,nombre, precio, txt_cantidad, precio, btn_eliminar];
-        addRow(tabla, elementos);
-        $("#total").text(parseFloat($("#total").text())+precio);
-        //agregar el evento al ultimo btn agregado
-        $(".remove-producto").last().on('click', function(){
-          removeRow($(this));
-        });
-        $('.keyboard').last().keyboard();
-        $(".cantidad").last().change(function(e){
-          actualizarSubtotal($(this));
-        });
-      });
-      $(".remove-producto").on('click', function(){
-        removeRow($(this));
-      });
-      $(".cantidad").blur(function(){
-        console.log("perd'i el foco");
-      });
-    </script>
+    <button name="button" class="categoria btn btn-default btn-lg">Nombre_Categoria</button>
+    <script src="./js/jquery-latest.min.js" charset="utf-8"></script>
 
     <script>
-	$(".aut").on("click", function(){
-		var valor = $(this).text();
-		console.log(valor);
-
-	});
+      $(".categoria").on("click", function(){
+        var nombre_categoria = $(this).text();
+        $.ajax({
+            url : '/Productos/Index',
+            data : { categoria : nombre_categoria },
+            type : 'GET',
+            dataType : 'json',
+            success : function(json) {
+              $("#contenedor").children("button").remove();
+              $.each(json, function(i,item){
+                
+        			     document.write("<br>"+i+" - "+miJSON[i].valor+" - "+miJSON[i].color+" - "+miJSON[i].caracteristica.tipo+" - "+miJSON[i].caracteristica.ref);
+        		  });
+            },
+            error : function(xhr, status) {
+                alert('Problema de conexion. Estado:'+status);
+            }
+        });
+      });
     </script>
-</body>
+  </body>
 </html>
